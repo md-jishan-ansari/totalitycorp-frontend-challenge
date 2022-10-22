@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# UI Clone of [Apple](https://www.apple.com/) website
+## Features
+In this I just make a Home page of Apple which contains 
+- Navbar
+- Card 
+- Carousel
+- Footer etc.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+and it shows the product of Apple like Phones, watches, laptop and other electronics accessories and it's services like Tv shows, movies, etc.
 
-## Available Scripts
+## Functionality and Approach
+- ## Navbar
+In navbar it shows many options regarding their products and services like watches, airpods, ipad and along with this there is a search bar, Bag which helps user to easily navigate according to their needs.
 
-In the project directory, you can run:
+In navbar, there is two `<div>` , first for all the navbutton and second for the search.
+when we click on the search icon then, the `<div>` of navbuttons will hide and search div came into a picture.
 
-### `npm start`
+and I made a two navbar, one for the bigger screen and another for the smaller screen so that page will be responsive.
+### Tech Stack used in Navbar: HTML, CSS-flexbox
+In Navbar Bag button, we can find lots of stuff like accounts, signin, orders, saved items options which make this website more customized. And all these have very nice Hover Effect.
+### Tech Stack used in Navbar Bag button: React Bootstrap/dropdown
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+And after that there is a few sections regarding their products which gives options to learn more about the product, buy or order now, stream now, apply etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+And For these sections, I used two images for each. One for the large screen and another for the smaller screen so that our page is responsive.
+- ## Carousel
+In carousel, it displays current shows or TV series or movies.
+I made this carousel using `npm` package called `react-multi-carousel`. I customized this carousel according to my need and size of screen for making it responsive too and attractive as well.
+- ## Footer
 
-### `npm test`
+Footer section gives link of all the content of this site.
+and I made a two footer, one for the bigger screen and another for the smaller screen so that page will be responsive.
+I made whole footer with a HTML, CSS except one thing called 
+accordian which I made using React Bootstrap and then customized it according to the real website of Apple.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ## Responsiveness
 
-### `npm run build`
+It works in any devices. It is fully responsive.
+Navbar, carousel, cards and footer changes it's layout according to the device.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`React Js`, `HTML`, `CSS`, `React Bootstrap`
