@@ -133,7 +133,7 @@ const HomeCarousel = () => {
       ssr={true} // means to render carousel on server-side.
       infinite={true}
       centerMode={isCenterWidth}
-      autoPlay={false}
+      autoPlay={true}
       autoPlaySpeed={2000}
       keyBoardControl={true}
       itemClass="carousel-item-padding-40-px"
