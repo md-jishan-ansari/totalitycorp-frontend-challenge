@@ -1,0 +1,262 @@
+/* 48, 44 */
+
+.navbar {
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: top 0.3s ease;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+}
+
+.navLinkBtn {
+  font-size: 12px;
+  line-height: 3.66667;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  font-family: sans-serif;
+  color: #f5f5f7;
+  padding: 0 8px;
+  height: 44px;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.navLinkBtn:hover {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.navLinkIcon {
+  color: #f5f5f7;
+  opacity: 0.8;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.navLinkIcon:hover {
+  color: #fff !important;
+  opacity: 1;
+}
+
+.dropdownBtn {
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.dropdownMenu {
+  width: 300px !important;
+  transform: translate3d(-20px, 46.4px, 0px) !important;
+}
+
+/* ************ */
+
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 44px;
+  z-index: 2;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 44px;
+}
+
+.searchInput {
+  width: 615px;
+  height: 44px;
+  border: 0px;
+  background: transparent;
+  font-size: 17px;
+  line-height: 1.29412;
+  letter-spacing: -0.021em;
+  font-family: sans-serif;
+  color: #fff;
+  outline: none;
+}
+
+.searchInputIcon {
+  color: #6e6e73;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.searchSuggest {
+  position: fixed;
+  z-index: 3;
+  top: 44px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 691px;
+  height: 240px;
+  background-color: #fff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  padding: 23px 5px 18px;
+}
+
+.searchSuggeshHeading {
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-family: sans-serif;
+  color: #6e6e73;
+  padding-left: 30px;
+  margin: 0 0 7px 0;
+}
+
+.searchSuggestLink {
+  display: block;
+  font-size: 14px;
+  color: #1d1d1f;
+  opacity: 0.9;
+  padding: 5px 48px;
+  margin: 3px 0px;
+  text-decoration: none;
+}
+
+.searchSuggestLink:hover {
+  background: rgba(240, 239, 239, 0.92);
+  color: #06c;
+  opacity: 1;
+}
+
+/* *********************** */
+
+.accordian {
+  transition: height 0.6s ease;
+  width: 100%;
+  background-color: #000;
+}
+
+.mobileSearchBar {
+  max-width: 585px;
+  height: 36px;
+  background-color: #1d1d1f;
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.mobileSearchBar > .searchInput::placeholder {
+  color: #6e6e73;
+  opacity: 1;
+}
+
+.cancelBtn {
+  font-size: 17px;
+  padding: 0;
+  margin: auto 0 auto 20px;
+  color: #2997ff;
+  width: 60px;
+  cursor: pointer;
+}
+
+.divider {
+  border-bottom: 1px solid #545454;
+}
+
+.mobileNavItemContainer {
+  max-width: 645px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.mobileNavItem {
+  color: #f5f5f7;
+  opacity: 0.9;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.mobileNavItem:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.mobileSearchItem {
+  color: #fff;
+  font-size: 16px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.mobileSearchItem:hover {
+  color: #2997ff;
+}
+
+.quickLinkHeader {
+  font-size: 14px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #6e6e73;
+}
+
+/* **************************88 */
+
+.bagContainer {
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+.bagText {
+  color: #6e6e73;
+  padding: 35px 0 23px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: -0.016em;
+}
+
+.bagItem {
+  color: #06c;
+  display: block;
+  line-height: 44px;
+  text-decoration: none;
+  letter-spacing: -0.016em;
+}
+
+.bagItem > .underline {
+  position: relative;
+}
+
+.bagItem:hover > .underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5px;
+  bottom: 1px;
+  left: 0;
+  background-color: #424245;
+}
+
+.bagIcon {
+  margin-right: 10px;
+  font-size: 16px;
+  transform: translateY(-2px);
+}
